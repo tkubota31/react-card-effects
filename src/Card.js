@@ -1,10 +1,14 @@
 import React from "react"
+import "./Card.css";
 
-
-const Card = ({name,image}) =>{
-    return <img
+function Card({name,image}) {
+    return(
+    <div>
+        <img className="Card"
             alt = {name}
             src = {image} />
+    </div>
+    )
 }
 
 export default Card
